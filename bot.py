@@ -46,7 +46,7 @@ def normalize_text(text: str) -> str:
 
 def prepare_update(month: str, person: str, exercise: str, new_weight: float):
     if not EXCEL_PATH.exists():
-        raise FileNotFoundError(f"No existe el archivo {EXCEL_PATH.name}")
+        raise FileNotFoundError(f"N existe el archivo {EXCEL_PATH.name}")
 
     person_key = normalize_text(person)
     if person_key not in PERSON_TO_COL:
